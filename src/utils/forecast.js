@@ -15,7 +15,7 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        `It is currently ${body.currently.temperature}, ${body.daily.data[0].summary}, wind speed is ${body.currently.windSpeed}`
+        `It is currently ${body.currently.temperature}, ${body.daily.data[0].summary} Wind speed is ${body.currently.windSpeed}`
       );
     }
   });
